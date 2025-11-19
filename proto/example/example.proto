@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package example;
+
+import "buf/validate/validate.proto";
+
+option go_package = "github.com/haines/protovalidate-es-vs-go/gen/proto/example";
+
+message Message {
+  string hello = 1 [
+    (buf.validate.field).required = true,
+    (buf.validate.field).string.min_len = 1
+  ];
+}

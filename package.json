@@ -1,0 +1,9 @@
+{
+  "name": "@ahaines/protovalidate-es-vs-go",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@bufbuild/protobuf": "2.10.1",
+    "@bufbuild/protovalidate": "1.0.0"
+  }
+}
